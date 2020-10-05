@@ -4,7 +4,10 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
   var Command_List = File.read("/storage/emulated/0/Pictures/DB/Command_List.txt");
   var Bot_Info = File.read("/storage/emulated/0/Pictures/DB/Bot_Info.txt")
   var Temp = parseFloat(Utils.getWebText("https://hangang.life/").split("<h1 class=\"white\" id=\"temp\" \"><b> ")[1].split(" °C </b>")[0]);
-  var ARI_P =
+  var ARI_P = File.read("/storage/emulated/0/Pictures/DB/ARI_DB/P.txt").split("\n")[File.read("/storage/emulated/0/Pictures/DB/ARI_DB/P.txt").split("\n").length];
+  var JAM_P = File.read("/storage/emulated/0/Pictures/DB/JAM_DB/P.txt").split("\n")[File.read("/storage/emulated/0/Pictures/DB/JAM_DB/P.txt").split("\n").length];
+  var KOS_P = File.read("/storage/emulated/0/Pictures/DB/KOS_DB/P.txt").split("\n")[File.read("/storage/emulated/0/Pictures/DB/KOS_DB/P.txt").split("\n").length];
+  
 
   if(Room.indexOf(sender) == -1) {
     File.write("/storage/emulated/0/Pictures/DB/Room.txt", sender+"\n", true);
