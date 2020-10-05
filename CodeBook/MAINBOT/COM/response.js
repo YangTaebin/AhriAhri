@@ -26,6 +26,10 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
     replier.reply(Bot_Info);
   }
 
+  if(msg == "!정보") {
+    Com_Info =
+  }
+
   if(msg == "!한강") {
     replier.reply("현재 한강의 수온은\n" + Temp + "℃입니다.\n화씨 : " + (Temp*(9/5) + 32) + "℉");
     replier.reply("힘내세요 - 아리아리 연구회");
