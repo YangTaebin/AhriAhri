@@ -7,7 +7,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
   var ARI_P = File.read("/storage/emulated/0/Pictures/DB/ARI_DB/P.txt").split("\n")[File.read("/storage/emulated/0/Pictures/DB/ARI_DB/P.txt").split("\n").length];
   var JAM_P = File.read("/storage/emulated/0/Pictures/DB/JAM_DB/P.txt").split("\n")[File.read("/storage/emulated/0/Pictures/DB/JAM_DB/P.txt").split("\n").length];
   var KOS_P = File.read("/storage/emulated/0/Pictures/DB/KOS_DB/P.txt").split("\n")[File.read("/storage/emulated/0/Pictures/DB/KOS_DB/P.txt").split("\n").length];
-  
+
 
   if(Room.indexOf(sender) == -1) {
     File.write("/storage/emulated/0/Pictures/DB/Room.txt", sender+"\n", true);
@@ -31,6 +31,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
   }
 
   if(msg == "!정보") {
+    Com_Info = "현재 시작 회기: 제 " + Phase_Num + "회차\n\n현재 시장 상태\n아리아리 | ARI | 주가 " + ARI_P + " C (" + ARI_P_Change + "%)\n"
   }
 
   if(msg == "!한강") {
