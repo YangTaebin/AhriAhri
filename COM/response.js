@@ -14,7 +14,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
     }
   }
 
-  test
+  
 
   if(msg == "!명령어") {
     replier.reply(Command_List);
