@@ -22,7 +22,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
     replier.reply(Command_List);
   }
 
-  if(msg == "!정보") {
+  if(msg == "!소개") {
     replier.reply(Bot_Info);
   }
 
