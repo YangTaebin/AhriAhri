@@ -31,7 +31,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
   }
 
   if(msg == "!정보") {
-    Com_Info = "현재 시작 회기: 제 " + Phase_Num + "회차\n\n현재 시장 상태\n아리아리 | ARI | 주가 " + ARI_P + " C (" + ARI_P_Change + "%)\n"
+    Com_Info = "현재 시장: 제 " + Phase_Num + "회차\n\n현재 시장 상태\n아리아리 | ARI | 주가 " + ARI_P + " C (" + ARI_P_Change + "%)\n"
   }
 
   if(msg == "!한강") {
