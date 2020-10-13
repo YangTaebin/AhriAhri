@@ -12,7 +12,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
   if(Room.indexOf(sender) == -1) {
     File.write("/storage/emulated/0/Pictures/DB/Room.txt", sender+"\n", true);
   }
-
+ 
   if(msg.split("(")[0] == "!건의") {
     Sug_msg = msg.split("(").slice(1, msg.split("(").length).join("(");
     for(var i = 0; i < Manager.length; i++) {
